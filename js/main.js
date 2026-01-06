@@ -1,7 +1,7 @@
-function toggleSection(el) {
-  el.parentElement.classList.toggle("open");
-}
+function showSection(id) {
+  document.querySelectorAll('.content-box').forEach(box => {
+    box.classList.remove('active');
+  });
 
-document.getElementById("toggleTheme")?.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
+  document.getElementById(id).classList.add('active');
+}

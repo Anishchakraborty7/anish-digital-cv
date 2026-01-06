@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Anish Chakraborty | Digital CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,29 +12,15 @@
 
 <div class="page">
 
-  <!-- LEFT PROFILE -->
+  <!-- LEFT NAV PANEL -->
   <aside class="left-panel">
     <img src="assets/profile.jpg" class="profile-img" alt="Anish Chakraborty">
 
-    <div class="top-links">
-      <a href="projects.html">View Projects</a>
-      <a href="cv.pdf" download>Download CV</a>
-    </div>
-  </aside>
-
-  <!-- CENTER CONTENT -->
-  <div class="page">
-
-  <!-- LEFT PANEL -->
-  <aside class="left-panel">
-    <img src="assets/profile.jpg" class="profile-img" alt="Anish Chakraborty">
-
-    <div class="top-links">
-      <a href="projects.html">View Projects</a>
-      <a href="cv.pdf" download>Download CV</a>
-    </div>
+    <a href="projects.html" class="side-link">View Projects</a>
+    <a href="cv.pdf" download class="side-link">Download CV</a>
 
     <div class="nav-buttons">
+      <button onclick="showSection('summary')">Professional Summary</button>
       <button onclick="showSection('contact')">Contact</button>
       <button onclick="showSection('skills')">Skills</button>
       <button onclick="showSection('education')">Education</button>
@@ -43,26 +30,24 @@
     </div>
   </aside>
 
-  <!-- CENTER TITLE BAR -->
+  <!-- CENTER HEADER -->
   <section class="center-panel">
     <h1>ANISH <span>CHAKRABORTY</span></h1>
     <p class="quote">“I don’t wait for opportunities — I design them.”</p>
   </section>
 
-  <!-- RIGHT CONTENT BOX -->
+  <!-- RIGHT CONTENT PANEL -->
   <main class="right-panel">
 
-    <!-- PROFESSIONAL SUMMARY -->
     <div class="content-box active" id="summary">
       <h2>Professional Summary</h2>
       <p>
-        Data Science and AI-focused professional with strong experience in
-        Python, Machine Learning, media strategy, and digital outreach.
+        Data Science and AI-focused professional with strong experience in Python,
+        Machine Learning, media strategy, and digital outreach.
         Founder of MediaHouse Assam with 75+ digital media partnerships.
       </p>
     </div>
 
-    <!-- CONTACT -->
     <div class="content-box" id="contact">
       <h2>Contact</h2>
       <p>📞 +91 99574 99346</p>
@@ -70,13 +55,11 @@
       <p>📍 Dhupdhara, Goalpara</p>
     </div>
 
-    <!-- SKILLS -->
     <div class="content-box" id="skills">
       <h2>Skills</h2>
       <p>Python, Machine Learning, Deep Learning, SQL, Data Analysis, Media Strategy</p>
     </div>
 
-    <!-- EDUCATION -->
     <div class="content-box" id="education">
       <h2>Education</h2>
       <p>B.Sc Mathematics — Jawaharlal Nehru College, Boko</p>
@@ -84,7 +67,6 @@
       <p>AI & ML Certification — IIT Guwahati (Ongoing)</p>
     </div>
 
-    <!-- STRENGTHS -->
     <div class="content-box" id="strengths">
       <h2>Strengths</h2>
       <ul>
@@ -95,30 +77,20 @@
       </ul>
     </div>
 
-    <!-- LANGUAGES -->
     <div class="content-box" id="languages">
       <h2>Languages</h2>
       <p>English, Hindi, Assamese, Bengali</p>
     </div>
 
-    <!-- AWARDS -->
     <div class="content-box" id="awards">
       <h2>Achievements & Awards</h2>
-      <p>Founded MediaHouse Assam with 75+ media partners.</p>
+      <p>Founded MediaHouse Assam with 75+ digital media partners.</p>
     </div>
 
   </main>
 
 </div>
 
-
-  <!-- RIGHT ACTIONS -->
-  <aside class="right-panel">
-    <a href="https://wa.me/919957499346" target="_blank" class="action-btn">WhatsApp</a>
-    <a href="#contact" class="action-btn secondary">Hire Me</a>
-  </aside>
-
-</div>
 <script src="js/main.js"></script>
 </body>
 </html>
