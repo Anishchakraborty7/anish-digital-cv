@@ -61,6 +61,11 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+.nav-btn.active {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+  border-color: transparent;
+}
 
 .nav-buttons button:hover {
   background: linear-gradient(90deg, #22f7c8, #9cff57);
@@ -92,7 +97,10 @@ body {
 }
 
 .content-box {
-  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
   background: linear-gradient(
     180deg,
     rgba(34,247,200,0.08),
@@ -103,6 +111,13 @@ body {
   min-height: 260px;
   box-shadow: 0 0 30px rgba(34,247,200,0.15);
 }
+
+.content-box.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 
 .content-box.active {
   display: block;
