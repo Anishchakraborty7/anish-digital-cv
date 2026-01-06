@@ -76,21 +76,30 @@ h1 span {
 
 .nav-buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;   /* 👈 vertical */
   gap: 14px;
+  max-width: 260px;         /* controls width */
 }
+
 
 
 .nav-buttons button {
   background: #111827;
   border: 1px solid #22f7c8;
   color: #e5e7eb;
-  padding: 12px 18px;
-  border-radius: 999px; /* pill style */
+  padding: 14px 18px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
-  white-space: nowrap;
+  text-align: left;
+  font-size: 15px;
 }
+
+.nav-buttons button:hover {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+}
+
 
 
 .nav-buttons button:hover {
