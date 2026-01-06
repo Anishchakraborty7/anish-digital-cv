@@ -61,11 +61,6 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.nav-btn.active {
-  background: linear-gradient(90deg, #22f7c8, #9cff57);
-  color: #000;
-  border-color: transparent;
-}
 
 .nav-buttons button:hover {
   background: linear-gradient(90deg, #22f7c8, #9cff57);
@@ -97,32 +92,17 @@ body {
 }
 
 .content-box {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s ease, transform 0.35s ease;
-
+  display: none;
   background: linear-gradient(
     180deg,
     rgba(34,247,200,0.08),
     rgba(17,24,39,0.95)
   );
-
-  border-radius: 20px;
-
-  /* 👇 SIZE CONTROLS */
-  max-width: 900px;      /* change this to 800px / 1000px */
-  min-height: 320px;     /* vertical size */
-  padding: 40px;         /* inner spacing */
-
+  border-radius: 18px;
+  padding: 30px;
+  min-height: 260px;
   box-shadow: 0 0 30px rgba(34,247,200,0.15);
 }
-
-.content-box.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
 
 .content-box.active {
   display: block;
