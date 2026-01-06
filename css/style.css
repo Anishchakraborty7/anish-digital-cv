@@ -1,4 +1,8 @@
 * {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,12 +83,19 @@ h1 {
 }
 
 .card {
-  background: #111827;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 900px;
-  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.01)
+  );
+  backdrop-filter: blur(6px);
+  margin: 28px auto;
+  padding: 26px;
+  max-width: 1000px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
 }
+
 
 .card h2 {
   cursor: pointer;
@@ -140,4 +151,59 @@ footer {
   text-align: center;
   padding: 20px;
   opacity: 0.6;
+}
+.hero-pro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.hero-left .name {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.hero-left .name span {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 20px rgba(34,247,200,0.35);
+}
+
+.tagline-pro {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.tagline-pro strong {
+  color: var(--neon-green);
+}
+
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-right img {
+  width: 320px;
+  border-radius: 18px;
+  filter: grayscale(100%) contrast(1.1);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 30px 80px rgba(0,0,0,0.7);
+  transition: all 0.4s ease;
+}
+
+.hero-right img:hover {
+  filter: grayscale(0%);
+  box-shadow:
+    0 0 25px rgba(34,247,200,0.35),
+    0 40px 100px rgba(0,0,0,0.9);
+  transform: translateY(-6px);
 }
