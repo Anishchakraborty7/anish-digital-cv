@@ -75,20 +75,23 @@ h1 span {
 }
 
 .nav-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
 }
+
 
 .nav-buttons button {
   background: #111827;
   border: 1px solid #22f7c8;
   color: #e5e7eb;
-  padding: 14px;
-  border-radius: 12px;
+  padding: 12px 18px;
+  border-radius: 999px; /* pill style */
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
+
 
 .nav-buttons button:hover {
   background: #22f7c8;
