@@ -1,100 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Anish Chakraborty | Digital CV</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <img src="./assets/profile.jpg" alt="Anish Chakraborty" class="profile">
+<div class="page">
 
-    <h1>ANISH <span>CHAKRABORTY</span></h1>
+  <!-- LEFT PROFILE -->
+  <aside class="left-panel">
+    <img src="assets/profile.jpg" class="profile-img" alt="Anish Chakraborty">
 
-    <p class="tagline">
-      I don’t wait for opportunities.<br>
-      <strong>I design systems that create them.</strong>
-    </p>
-
-    <div class="buttons">
-      <a href="cv.pdf" download class="btn primary">Download CV</a>
-      <a href="projects.html" class="btn secondary">View Projects</a>
-      <a href="https://wa.me/919957499346" target="_blank" class="btn ghost">Hire Me</a>
+    <div class="top-links">
+      <a href="projects.html">View Projects</a>
+      <a href="cv.pdf" download>Download CV</a>
     </div>
-  </header>
+  </aside>
 
-  <!-- CONTENT -->
-  <main class="container">
+  <!-- CENTER CONTENT -->
+  <main class="center-panel">
+    <h1>ANISH <span>CHAKRABORTY</span></h1>
+    <p class="quote">“I don’t wait for opportunities — I design them.”</p>
 
-    <section class="card">
-      <h2>Contact</h2>
-      <p>📞 <a href="tel:+919957499346">+91 99574 99346</a></p>
-      <p>✉️ <a href="mailto:anishchakrabort699@gmail.com">anishchakrabort699@gmail.com</a></p>
-      <p>📍 Dhupdhara, Goalpara – 783123</p>
-    </section>
+    <div class="summary-box">
+      <h2>Professional Summary</h2>
+      <p>
+        Data Science and AI-focused professional with strong experience in
+        Python, Machine Learning, media strategy, and digital outreach.
+        Founder of MediaHouse Assam with 75+ media partnerships.
+      </p>
+    </div>
 
-    <section class="card">
-      <h2>Skills</h2>
-      <div class="tags">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Deep Learning</span>
-        <span>Data Analysis</span>
-        <span>SQL</span>
-        <span>Excel</span>
-        <span>Database Management</span>
-        <span>Media Relations</span>
-        <span>Marketing</span>
-        <span>Content Creation</span>
-        <span>Networking</span>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Education</h2>
-      <p><strong>B.Sc Mathematics</strong> — Jawaharlal Nehru College, Boko</p>
-      <p>Foundation of Data Science — 2024</p>
-      <p>AI & ML Certification — IIT Guwahati (Ongoing)</p>
-    </section>
-
-    <section class="card">
-      <h2>Strengths</h2>
-      <ul>
-        <li>Excellent communication & networking</li>
-        <li>Creative and analytical thinking</li>
-        <li>Fast learner & adaptable</li>
-        <li>AI-driven decision making</li>
-        <li>Leadership & teamwork</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Languages</h2>
-      <div class="tags">
-        <span>English</span>
-        <span>Hindi</span>
-        <span>Assamese</span>
-        <span>Bengali</span>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Achievements & Awards</h2>
-      <p>Founded <strong>MediaHouse Assam</strong> with 75+ digital media partners.</p>
-      <p>Promoted regional events & social initiatives.</p>
-      <p>Recognized for strong communication & networking.</p>
-    </section>
-
+    <div class="nav-buttons">
+      <button>Contact</button>
+      <button>Skills</button>
+      <button>Education</button>
+      <button>Strengths</button>
+      <button>Languages</button>
+      <button>Achievements & Awards</button>
+    </div>
   </main>
 
-  <footer>
-    © 2026 Anish Chakraborty
-  </footer>
+  <!-- RIGHT ACTIONS -->
+  <aside class="right-panel">
+    <a href="https://wa.me/919957499346" target="_blank" class="action-btn">WhatsApp</a>
+    <a href="#contact" class="action-btn secondary">Hire Me</a>
+  </aside>
+
+</div>
 
 </body>
 </html>
