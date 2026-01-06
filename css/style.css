@@ -101,14 +101,20 @@ body {
   transform: translateY(10px);
   pointer-events: none;
   transition: opacity 0.35s ease, transform 0.35s ease;
+
   background: linear-gradient(
     180deg,
     rgba(34,247,200,0.08),
     rgba(17,24,39,0.95)
   );
-  border-radius: 18px;
-  padding: 30px;
-  min-height: 260px;
+
+  border-radius: 20px;
+
+  /* 👇 SIZE CONTROLS */
+  max-width: 900px;      /* change this to 800px / 1000px */
+  min-height: 320px;     /* vertical size */
+  padding: 40px;         /* inner spacing */
+
   box-shadow: 0 0 30px rgba(34,247,200,0.15);
 }
 
