@@ -87,10 +87,19 @@ body {
 }
 
 /* CONTENT */
+/* ===== CONTENT STRUCTURE FIX ===== */
+
 .content-area {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
+.content-wrapper {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* SINGLE SOURCE OF TRUTH */
 .content-box {
   display: none;
   background: linear-gradient(
@@ -98,9 +107,8 @@ body {
     rgba(34,247,200,0.08),
     rgba(17,24,39,0.95)
   );
-  border-radius: 18px;
-  padding: 30px;
-  min-height: 260px;
+  border-radius: 20px;
+  padding: 36px;
   box-shadow: 0 0 30px rgba(34,247,200,0.15);
 }
 
@@ -108,14 +116,6 @@ body {
   display: block;
 }
 
-.content-box h2 {
-  color: #9cff57;
-  margin-bottom: 14px;
-}
-
-ul {
-  padding-left: 18px;
-}
 /* TOP RIGHT ACTION BUTTONS */
 .top-actions {
   position: absolute;
