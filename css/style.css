@@ -260,6 +260,7 @@ ul {
 
 /* RIGHT SIDE */
 .cert-card {
+   margin-top: 16px; 
   background: linear-gradient(
     180deg,
     rgba(34,247,200,0.08),
