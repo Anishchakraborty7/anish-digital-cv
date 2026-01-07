@@ -116,3 +116,45 @@ body {
 ul {
   padding-left: 18px;
 }
+/* TOP RIGHT ACTION BUTTONS */
+.top-actions {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.top-btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.top-btn.whatsapp {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+}
+
+.top-btn.hire {
+  border: 1px solid #22f7c8;
+  color: #22f7c8;
+}
+
+.top-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .top-actions {
+    right: 20px;
+    top: 20px;
+    flex-direction: column;
+  }
+}
+
