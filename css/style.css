@@ -89,10 +89,7 @@ body {
 /* CONTENT */
 /* ===== CONTENT STRUCTURE FIX ===== */
 
-.content-area {
-  display: flex;
-  justify-content: center;
-}
+
 
 .content-wrapper {
   width: 100%;
