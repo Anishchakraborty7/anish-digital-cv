@@ -83,8 +83,10 @@ body {
 
 .quote {
   margin-top: 8px;
+  margin-bottom: 28px; /* 👈 THIS IS THE KEY FIX */
   opacity: 0.7;
 }
+
 
 /* CONTENT */
 /* ===== CONTENT STRUCTURE FIX ===== */
@@ -94,7 +96,9 @@ body {
 .content-wrapper {
   width: 100%;
   max-width: 900px;
+  margin-top: 8px; /* small, controlled breathing space */
 }
+
 
 /* SINGLE SOURCE OF TRUTH */
 .content-box {
@@ -212,11 +216,14 @@ body {
 /* ===== LATEST UPDATES SECTION ===== */
 
 .latest-updates {
-  margin-top: 30px;
+  margin-top: 22px; /* tighter, intentional */
+  padding-top: 18px;
+  border-top: 1px solid rgba(34,247,200,0.15); /* subtle divider */
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 24px;
 }
+
 
 /* LEFT SIDE */
 .updates-left h3 {
