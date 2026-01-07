@@ -291,3 +291,53 @@ ul {
     flex-direction: column;
   }
 }
+/* ===== PROJECT POPUP ===== */
+
+.project-modal {
+  max-width: 520px;
+}
+
+.project-modal h2 {
+  color: #9cff57;
+  margin-bottom: 12px;
+}
+
+.project-modal p {
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.project-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.project-links a {
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.project-links a:first-child {
+  background: #111827;
+  border: 1px solid #22f7c8;
+  color: #22f7c8;
+}
+
+.project-links a:last-child {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+}
+
+/* Make cards feel clickable */
+.project-card {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
