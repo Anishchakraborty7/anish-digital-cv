@@ -37,9 +37,10 @@
   <a href="https://wa.me/919957499346" target="_blank" class="top-btn whatsapp">
     WhatsApp Me
   </a>
-  <a href="#contact" class="top-btn hire" onclick="showSection('contact')">
-    Hire Me
-  </a>
+ <a href="javascript:void(0)" class="top-btn hire" onclick="openHireModal()">
+  Hire Me
+</a>
+
 </div>
 
 
@@ -104,8 +105,27 @@
   </main>
 
 </div>
+<!-- HIRE ME POPUP -->
+<div class="modal-overlay" id="hireModal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeHireModal()">×</button>
+
+    <h2>Hire Me</h2>
+
+    <p>If you’d like to collaborate, hire, or discuss opportunities, reach out:</p>
+
+    <p>📞 <strong>+91 99574 99346</strong></p>
+    <p>✉️ <strong>anishchakrabort699@gmail.com</strong></p>
+
+    <a href="https://wa.me/919957499346" target="_blank" class="whatsapp-btn">
+      Chat on WhatsApp
+    </a>
+  </div>
+</div>
+  
 
 <script src="js/main.js"></script>
 </body>
 </html>
+
 
