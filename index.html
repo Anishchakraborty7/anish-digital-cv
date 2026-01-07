@@ -108,17 +108,29 @@
     <h3>My Latest Updates</h3>
 
     <div class="project-cards">
-      <div class="project-card">
-        <h4>Project 1</h4>
-        <p>AI-based real estate lead scoring system.</p>
-      </div>
+      <div class="project-card"
+     onclick="openProjectModal(
+       'Property AI Platform',
+       'AI-based real estate lead qualification and scoring system that analyzes buyer intent and readiness.',
+       'Python, Machine Learning, Flask, SQL',
+       'https://github.com/yourgithub/project1',
+       'https://your-live-link.com'
+     )">
+  <h4>Project 1</h4>
+  <p>AI-based real estate lead scoring system.</p>
+</div>
 
-      <div class="project-card">
-        <h4>Project 2</h4>
-        <p>Student analytics & recommendation platform.</p>
-      </div>
-    </div>
-
+      <div class="project-card"
+     onclick="openProjectModal(
+       'Student Analytics Platform',
+       'Student profile analytics and AI-driven recommendation system for courses and career paths.',
+       'Python, Data Science, AI, Dashboard',
+       'https://github.com/yourgithub/project2',
+       ''
+     )">
+  <h4>Project 2</h4>
+  <p>Student analytics & recommendation platform.</p>
+</div>
     <a href="projects.html" class="view-more">
       View More →
     </a>
@@ -161,6 +173,7 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
 
