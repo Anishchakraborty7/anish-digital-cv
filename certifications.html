@@ -35,26 +35,27 @@
 
     <section class="projects-area">
 
-      <div class="project-box">
-        <h3>Artificial Intelligence & Machine Learning</h3>
-        <p class="project-desc">
-          Certification program focused on machine learning algorithms,
-          real-world AI applications, and data-driven systems.
-        </p>
-        <p class="project-tech">
-          <strong>Institute:</strong> IIT Guwahati
-        </p>
-      </div>
+     <div class="project-box cert-click"
+     onclick="openCertModal('Artificial Intelligence & Machine Learning', 'assets/cert-ai-ml.jpg')">
+  <h3>Artificial Intelligence & Machine Learning</h3>
+  <p class="project-desc">
+    Certification focused on machine learning algorithms and real-world AI systems.
+  </p>
+  <p class="project-tech">
+    <strong>Institute:</strong> IIT Guwahati
+  </p>
+</div>
 
-      <div class="project-box">
-        <h3>Foundation of Data Science</h3>
-        <p class="project-desc">
-          Core concepts of data analysis, statistics, Python, and visualization.
-        </p>
-        <p class="project-tech">
-          <strong>Status:</strong> Completed (2024)
-        </p>
-      </div>
+     <div class="project-box cert-click"
+     onclick="openCertModal('Foundation of Data Science', 'assets/cert-data-science.jpg')">
+  <h3>Foundation of Data Science</h3>
+  <p class="project-desc">
+    Core concepts of data analysis, statistics, Python, and visualization.
+  </p>
+  <p class="project-tech">
+    <strong>Status:</strong> Completed (2024)
+  </p>
+</div>
 
       <!-- ADD MORE CERTIFICATIONS HERE -->
 
@@ -62,6 +63,14 @@
 
   </main>
 
+</div>
+<!-- CERTIFICATE IMAGE POPUP -->
+<div class="modal-overlay" id="certModal">
+  <div class="modal-box cert-modal">
+    <button class="close-btn" onclick="closeCertModal()">×</button>
+    <h2 id="certTitle"></h2>
+    <img id="certImage" src="" alt="Certificate" />
+  </div>
 </div>
 
 </body>
