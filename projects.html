@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Projects | Anish Chakraborty</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="hero small">
-    <h1>Projects</h1>
-    <p>Ideas → Systems → Impact</p>
-    <a href="index.html" class="btn secondary">← Back</a>
-  </header>
+<div class="page">
 
-  <main class="container">
+  <!-- LEFT PANEL (SAME AS MAIN SITE) -->
+  <aside class="left-panel">
+    <img src="assets/profile.jpg" class="profile-img" alt="Anish Chakraborty">
 
-    <section class="card">
-      <h2>Property AI Platform</h2>
-      <p>AI-powered real estate lead qualification and scoring system.</p>
-      <p class="muted">Python • ML • Flask • SQL</p>
-      <a href="#" target="_blank">GitHub</a> |
-      <a href="#" target="_blank">Live Demo</a>
+    <a href="index.html" class="side-link">← Back to CV</a>
+
+    <div class="nav-buttons">
+      <button class="nav-btn active">Projects</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-panel">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>My <span>Projects</span></h1>
+      <p class="quote">
+        Real systems. Real logic. Real outcomes.
+      </p>
+    </header>
+
+    <!-- PROJECT LIST -->
+    <section class="projects-area">
+
+      <!-- PROJECT CARD -->
+      <div class="project-box">
+        <h3>Property AI Platform</h3>
+        <p class="project-desc">
+          AI-powered real estate lead qualification and scoring system
+          that analyzes buyer intent and readiness.
+        </p>
+
+        <p class="project-tech">
+          <strong>Tech Stack:</strong> Python, Machine Learning, Flask, SQL
+        </p>
+
+        <div class="project-actions">
+          <a href="https://github.com/yourgithub/property-ai" target="_blank">
+            GitHub
+          </a>
+          <a href="#" target="_blank">
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD -->
+      <div class="project-box">
+        <h3>Student Analytics Platform</h3>
+        <p class="project-desc">
+          Data-driven student profiling and AI-based recommendations
+          for courses and career paths.
+        </p>
+
+        <p class="project-tech">
+          <strong>Tech Stack:</strong> Python, Data Science, AI, Dashboard
+        </p>
+
+        <div class="project-actions">
+          <a href="https://github.com/yourgithub/student-analytics" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- COPY THIS BLOCK TO ADD MORE PROJECTS -->
+
     </section>
-
-    <!-- COPY THIS CARD TO ADD MORE PROJECTS -->
 
   </main>
 
-  <footer>
-    © 2026 Anish Chakraborty
-  </footer>
+</div>
 
 </body>
 </html>

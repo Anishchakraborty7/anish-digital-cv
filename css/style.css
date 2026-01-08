@@ -116,3 +116,62 @@ body {
 ul {
   padding-left: 18px;
 }
+/* ===== PROJECTS PAGE ===== */
+
+.projects-area {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.project-box {
+  background: linear-gradient(
+    180deg,
+    rgba(34,247,200,0.06),
+    rgba(17,24,39,0.95)
+  );
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 0 24px rgba(34,247,200,0.12);
+}
+
+.project-box h3 {
+  color: #9cff57;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.project-tech {
+  font-size: 13px;
+  opacity: 0.75;
+  margin-bottom: 18px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.project-actions a {
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.project-actions a:first-child {
+  border: 1px solid #22f7c8;
+  color: #22f7c8;
+}
+
+.project-actions a:last-child {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+}
