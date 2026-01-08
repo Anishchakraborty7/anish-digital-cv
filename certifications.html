@@ -66,6 +66,10 @@
 <!-- CERTIFICATE IMAGE POPUP -->
 <div class="modal-overlay" id="certModal">
   <div class="modal-box cert-modal">
+     <button class="close-btn" onclick="closeCertModal()">×</button>
+     <button class="nav-arrow left" onclick="prevCert()">‹</button>
+     <button class="nav-arrow right" onclick="nextCert()">›</button>
+
     <button class="close-btn" onclick="closeCertModal()">×</button>
     <h2 id="certTitle"></h2>
     <img id="certImage" src="" alt="Certificate" />
