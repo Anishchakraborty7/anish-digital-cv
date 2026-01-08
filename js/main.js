@@ -48,3 +48,20 @@ document.addEventListener("click", function (e) {
     closeProjectModal();
   }
 });
+function openCertModal(title, imagePath) {
+  document.getElementById("certTitle").innerText = title;
+  document.getElementById("certImage").src = imagePath;
+  document.getElementById("certModal").classList.add("active");
+}
+
+function closeCertModal() {
+  document.getElementById("certModal").classList.remove("active");
+}
+
+/* Close when clicking outside */
+document.addEventListener("click", function (e) {
+  const modal = document.getElementById("certModal");
+  if (e.target === modal) {
+    closeCertModal();
+  }
+});
