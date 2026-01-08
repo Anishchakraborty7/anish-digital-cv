@@ -309,6 +309,17 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+.link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+}
 
 /* RIGHT SIDE */
 .cert-card {
