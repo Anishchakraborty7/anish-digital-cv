@@ -85,3 +85,14 @@ const certificates = [
 ];
 
 let currentCertIndex = 0;
+function nextCert() {
+  currentCertIndex =
+    (currentCertIndex + 1) % certificates.length;
+  openCertModalByIndex(currentCertIndex);
+}
+
+function prevCert() {
+  currentCertIndex =
+    (currentCertIndex - 1 + certificates.length) % certificates.length;
+  openCertModalByIndex(currentCertIndex);
+}
