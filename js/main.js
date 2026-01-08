@@ -48,11 +48,18 @@ document.addEventListener("click", function (e) {
     closeProjectModal();
   }
 });
-function openCertModal(title, imagePath) {
-  document.getElementById("certTitle").innerText = title;
-  document.getElementById("certImage").src = imagePath;
+function openCertModalByIndex(index) {
+  currentCertIndex = index;
+
+  document.getElementById("certTitle").innerText =
+    certificates[currentCertIndex].title;
+
+  document.getElementById("certImage").src =
+    certificates[currentCertIndex].image;
+
   document.getElementById("certModal").classList.add("active");
 }
+
 
 function closeCertModal() {
   document.getElementById("certModal").classList.remove("active");
@@ -65,3 +72,16 @@ document.addEventListener("click", function (e) {
     closeCertModal();
   }
 });
+/* ===== CERTIFICATE SLIDER DATA ===== */
+const certificates = [
+  {
+    title: "Artificial Intelligence & Machine Learning",
+    image: "assets/cert-ai-ml.jpg"
+  },
+  {
+    title: "Foundation of Data Science",
+    image: "assets/cert-data-science.jpg"
+  }
+];
+
+let currentCertIndex = 0;
