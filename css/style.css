@@ -67,111 +67,52 @@ body {
   color: #000;
 }
 
-/* MAIN PANEL */
-.main-panel {
-  padding: 40px 50px;
+
+
+.nav-buttons button:hover {
+  background: #22f7c8;
+  color: #000;
 }
 
-/* HEADER */
-.header h1 {
-  font-size: 2.6rem;
-}
-
-.header h1 span {
-  color: #9cff57;
-}
-
-.quote {
-  margin-top: 8px;
-  opacity: 0.7;
-}
-
-/* CONTENT */
-.content-area {
-  margin-top: 30px;
-}
-
-.content-box {
-  display: none;
-  background: linear-gradient(
-    180deg,
-    rgba(34,247,200,0.08),
-    rgba(17,24,39,0.95)
-  );
-  border-radius: 18px;
-  padding: 30px;
-  min-height: 260px;
-  box-shadow: 0 0 30px rgba(34,247,200,0.15);
-}
-
-.content-box.active {
-  display: block;
-}
-
-.content-box h2 {
-  color: #9cff57;
-  margin-bottom: 14px;
-}
-
-ul {
-  padding-left: 18px;
-}
-/* ===== PROJECTS PAGE ===== */
-
-.projects-area {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-}
-
-.project-box {
-  background: linear-gradient(
-    180deg,
-    rgba(34,247,200,0.06),
-    rgba(17,24,39,0.95)
-  );
-  border-radius: 18px;
-  padding: 26px;
-  box-shadow: 0 0 24px rgba(34,247,200,0.12);
-}
-
-.project-box h3 {
-  color: #9cff57;
-  margin-bottom: 10px;
-}
-
-.project-desc {
-  font-size: 14px;
-  opacity: 0.9;
-  margin-bottom: 12px;
-}
-
-.project-tech {
-  font-size: 13px;
-  opacity: 0.75;
-  margin-bottom: 18px;
-}
-
-.project-actions {
+/* RIGHT PANEL */
+.right-panel {
+  padding: 40px 20px;
+  border-left: 1px solid #1f2937;
   display: flex;
-  gap: 14px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.project-actions a {
-  padding: 10px 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.project-actions a:first-child {
-  border: 1px solid #22f7c8;
-  color: #22f7c8;
-}
-
-.project-actions a:last-child {
+.action-btn {
   background: linear-gradient(90deg, #22f7c8, #9cff57);
   color: #000;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.action-btn.secondary {
+  background: transparent;
+  color: #22f7c8;
+  border: 1px solid #22f7c8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel,
+  .right-panel {
+    border: none;
+  }
+
+  .right-panel {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
