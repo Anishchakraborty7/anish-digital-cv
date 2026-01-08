@@ -96,3 +96,25 @@ function prevCert() {
     (currentCertIndex - 1 + certificates.length) % certificates.length;
   openCertModalByIndex(currentCertIndex);
 }
+let startX = 0;
+
+const certImage = document.getElementById("certImage");
+
+certImage.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+certImage.addEventListener("touchend", e => {
+  const endX = e.changedTouches[0].clientX;
+  const diff = startX - endX;
+
+  if (diff > 50) nextCert();      // swipe left
+  else if (diff < -50) prevCert(); // swipe right
+});
+document.addEventListener("keydown", e => {
+  if (!document.getElementById("certModal").classList.contains("active")) return;
+
+  if (e.key === "ArrowRight") nextCert();
+  if (e.key === "ArrowLeft") prevCert();
+  if (e.key === "Escape") closeCertModal();
+});
