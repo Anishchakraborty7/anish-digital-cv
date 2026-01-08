@@ -481,3 +481,29 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(34,247,200,0.25);
 }
+/* ===== CERTIFICATE NAVIGATION ===== */
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(34,247,200,0.15);
+  border: none;
+  color: #22f7c8;
+  font-size: 32px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-arrow.left {
+  left: -20px;
+}
+
+.nav-arrow.right {
+  right: -20px;
+}
+
+.nav-arrow:hover {
+  background: rgba(34,247,200,0.3);
+}
