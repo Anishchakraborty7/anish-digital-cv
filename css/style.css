@@ -464,3 +464,20 @@ body {
   background: linear-gradient(90deg, #22f7c8, #9cff57);
   color: #000;
 }
+/* ===== CERTIFICATE POPUP ===== */
+
+.cert-click {
+  cursor: pointer;
+}
+
+.cert-modal {
+  max-width: 720px;
+  text-align: center;
+}
+
+.cert-modal img {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(34,247,200,0.25);
+}
