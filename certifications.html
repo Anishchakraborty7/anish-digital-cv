@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certifications | Anish Chakraborty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- LEFT PANEL -->
+  <aside class="left-panel">
+    <img src="assets/profile.jpg" class="profile-img" alt="Anish Chakraborty">
+
+    <a href="index.html" class="side-link">← Back to CV</a>
+
+    <div class="nav-buttons">
+      <button class="nav-btn active">Certifications</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-panel">
+
+    <header class="header">
+      <h1>My <span>Certifications</span></h1>
+      <p class="quote">
+        Continuous learning, verified skills.
+      </p>
+    </header>
+
+    <section class="projects-area">
+
+    <div class="project-box cert-click" onclick="openCertModalByIndex(0)">
+  <h3>Artificial Intelligence & Machine Learning</h3>
+  <p class="project-desc">Certification focused on ML & AI systems.</p>
+</div>
+
+<div class="project-box cert-click" onclick="openCertModalByIndex(1)">
+  <h3>Foundation of Data Science</h3>
+  <p class="project-desc">Core data science concepts and analysis.</p>
+</div>
+
+     <div class="project-box cert-click"
+     onclick="openCertModal('Foundation of Data Science', 'assets/cert-data-science.jpg')">
+  <h3>Foundation of Data Science</h3>
+  <p class="project-desc">
+    Core concepts of data analysis, statistics, Python, and visualization.
+  </p>
+  <p class="project-tech">
+    <strong>Status:</strong> Completed (2024)
+  </p>
+</div>
+
+      <!-- ADD MORE CERTIFICATIONS HERE -->
+
+    </section>
+
+  </main>
+
+</div>
+<!-- CERTIFICATE IMAGE POPUP -->
+<div class="modal-overlay" id="certModal">
+  <div class="modal-box cert-modal">
+     <button class="close-btn" onclick="closeCertModal()">×</button>
+     <button class="nav-arrow left" onclick="prevCert()">‹</button>
+     <button class="nav-arrow right" onclick="nextCert()">›</button>
+
+    <button class="close-btn" onclick="closeCertModal()">×</button>
+    <h2 id="certTitle"></h2>
+    <img id="certImage" src="" alt="Certificate" />
+  </div>
+</div>
+
+</body>
+</html>
+
