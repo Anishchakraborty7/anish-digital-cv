@@ -42,6 +42,41 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
+/* ===== TOP RIGHT ACTION BUTTONS ===== */
+.top-actions {
+  position: fixed;
+  top: 24px;
+  right: 28px;
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.top-btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* WhatsApp */
+.top-btn.whatsapp {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+}
+
+/* Hire Me */
+.top-btn.hire {
+  background: transparent;
+  border: 1px solid #22f7c8;
+  color: #22f7c8;
+}
+
+.top-btn:hover {
+  transform: translateY(-2px);
+}
 
 /* NAV BUTTONS */
 .nav-buttons {
@@ -434,22 +469,20 @@ body {
 
 /* ===== SECTION VISIBILITY CONTROL ===== */
 
+/* ===== MAIN CONTENT BOX ===== */
 .content-box {
   display: none;
-  animation: fadeIn 0.35s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(34,247,200,0.06),
+    rgba(17,24,39,0.95)
+  );
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 0 28px rgba(34,247,200,0.12);
+  max-width: 900px;
 }
 
 .content-box.active {
   display: block;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
