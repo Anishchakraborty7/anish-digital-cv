@@ -124,6 +124,8 @@ body {
   align-items: center;
 }
 .header {
+  position: relative;
+  padding-right: 180px; /* space for top-right buttons */
   margin-bottom: 36px;
 }
 
@@ -477,12 +479,27 @@ body {
     rgba(34,247,200,0.06),
     rgba(17,24,39,0.95)
   );
-  padding: 28px;
-  border-radius: 18px;
-  box-shadow: 0 0 28px rgba(34,247,200,0.12);
-  max-width: 900px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(34,247,200,0.18);
+  max-width: 100%;
 }
 
 .content-box.active {
   display: block;
+}
+/* ===== CONTENT AREA WRAPPER (RESTORES CARD LAYOUT) ===== */
+
+.content-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
