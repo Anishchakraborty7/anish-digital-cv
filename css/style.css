@@ -88,6 +88,9 @@ body {
   gap: 20px;
   align-items: center;
 }
+.header {
+  margin-bottom: 36px;
+}
 
 .action-btn {
   background: linear-gradient(90deg, #22f7c8, #9cff57);
@@ -175,13 +178,13 @@ body {
 /* ===== LATEST UPDATES SECTION ===== */
 
 .latest-updates {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(34,247,200,0.15);
+  margin-top: 48px;   /* <-- THIS is the key */
+  padding-top: 28px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 24px;
+  gap: 28px;
 }
+
 
 
 
@@ -235,16 +238,17 @@ body {
 
 /* RIGHT SIDE */
 .cert-card {
-  margin-top: 24px; 
+  margin-top: 36px;   /* more breathing space */
   background: linear-gradient(
     180deg,
-    rgba(34,247,200,0.08),
+    rgba(34,247,200,0.06),
     rgba(17,24,39,0.95)
   );
   border-radius: 16px;
-  padding: 18px;
+  padding: 20px;
   box-shadow: 0 0 20px rgba(34,247,200,0.15);
 }
+
 
 .cert-card h4 {
   margin-bottom: 10px;
