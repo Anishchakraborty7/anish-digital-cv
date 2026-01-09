@@ -66,6 +66,11 @@ body {
   background: linear-gradient(90deg, #22f7c8, #9cff57);
   color: #000;
 }
+.nav-buttons button.active {
+  background: linear-gradient(90deg, #22f7c8, #9cff57);
+  color: #000;
+  font-weight: 600;
+}
 
 
 
@@ -423,3 +428,24 @@ body {
   background: rgba(34,247,200,0.3);
 }
 
+/* ===== SECTION VISIBILITY CONTROL ===== */
+
+.content-box {
+  display: none;
+  animation: fadeIn 0.35s ease;
+}
+
+.content-box.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
