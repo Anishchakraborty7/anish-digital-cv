@@ -1,9 +1,22 @@
 function showSection(id) {
-  document.querySelectorAll('.content-box').forEach(box => {
-    box.classList.remove('active');
+  const boxes = document.querySelectorAll(".content-box");
+  const buttons = document.querySelectorAll(".nav-buttons button");
+
+  boxes.forEach(box => box.classList.remove("active"));
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  document.getElementById(id).classList.add("active");
+
+  // highlight active button
+  buttons.forEach(btn => {
+    if (btn.getAttribute("onclick")?.includes(id)) {
+      btn.classList.add("active");
+    }
   });
-  document.getElementById(id).classList.add('active');
 }
+
+/* ===== HIRE MODAL ===== */
+
 function openHireModal() {
   document.getElementById("hireModal").classList.add("active");
 }
@@ -12,7 +25,6 @@ function closeHireModal() {
   document.getElementById("hireModal").classList.remove("active");
 }
 
-/* Close popup when clicking outside */
 document.addEventListener("click", function (e) {
   const modal = document.getElementById("hireModal");
   if (e.target === modal) {
